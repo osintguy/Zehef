@@ -158,7 +158,7 @@ zehef = "zehef:custom_main"
 [tool.hatch.build.targets.wheel]
 packages = ["lib","zehef.py","main.py","modules"]
 
-[tool.hatch.build.targets.sdist.force-include]
+[tool.hatch.build.targets.wheel.force-include]
 "config.json" = "config.json"
 
 
