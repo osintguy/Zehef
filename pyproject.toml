@@ -157,7 +157,7 @@ zehef = "zehef:custom_main"
 
 
 [tool.hatch.build.targets.wheel]
-packages = ["lib","zehef.py","main.py"]
+packages = ["lib","zehef.py","main.py","modules"]
 
 # This is configuration specific to the `setuptools` build backend.
 # If you are using a different build backend, you will need to change this.
