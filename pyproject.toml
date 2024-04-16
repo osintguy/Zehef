@@ -153,7 +153,7 @@ dependencies = ["argparse","httpx","requests","bs4","pwnedpasswords","asyncio"]
 # The following would provide a command line executable called `sample`
 # which executes the function `main` from this package when invoked.
 [project.scripts]
-sample = "zehef:main"
+sample = "zehef:custom_main"
 
 
 # This is configuration specific to the `setuptools` build backend.
