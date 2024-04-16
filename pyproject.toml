@@ -156,7 +156,8 @@ dependencies = ["argparse","httpx","requests","bs4","pwnedpasswords","asyncio"]
 zehef = "zehef:custom_main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["lib","zehef.py","main.py","modules","config.json"]
+packages = ["lib","zehef.py","main.py","modules"]
+sources = ["config.json"]
 
 # This is configuration specific to the `setuptools` build backend.
 # If you are using a different build backend, you will need to change this.
