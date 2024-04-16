@@ -1,7 +1,6 @@
 import argparse 
 import re
 from .colors import *
-from .update import Version_Checker
 from modules.accounts.twitter import x
 from modules.accounts.gravatar import gravatar
 from modules.accounts.spotify import spotify
@@ -19,8 +18,6 @@ from modules.breaches.pwned import pwned
 from .emails_gen import Email_Gen
 
 async def parser():
-    await Version_Checker.checker()
-
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
