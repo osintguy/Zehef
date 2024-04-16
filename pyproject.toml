@@ -156,6 +156,10 @@ dependencies = ["argparse","httpx","requests","bs4","pwnedpasswords","asyncio"]
 zehef = "zehef:custom_main"
 
 
+[tool.hatch.build]
+include = ["config.json"]
+
+
 [tool.hatch.build.targets.wheel]
 packages = ["lib","zehef.py","main.py","modules"]
 
