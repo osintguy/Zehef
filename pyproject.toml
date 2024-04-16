@@ -9,9 +9,9 @@
 # https://packaging.python.org/en/latest/tutorials/packaging-projects/#choosing-a-build-backend
 [build-system]
 # A list of packages that are needed to build your package:
-requires = ["setuptools"]  # REQUIRED if [build-system] table is used
+requires = ["hatchling"]  # REQUIRED if [build-system] table is used
 # The name of the Python object that frontends will use to perform the build:
-build-backend = "setuptools.build_meta"  # If not defined, then legacy behavior can happen.
+build-backend = "hatchling.build"  # If not defined, then legacy behavior can happen.
 
 
 [project]
@@ -153,13 +153,11 @@ dependencies = ["argparse","httpx","requests","bs4","pwnedpasswords","asyncio"]
 # The following would provide a command line executable called `sample`
 # which executes the function `main` from this package when invoked.
 [project.scripts]
-zehef = ".zehef:custom_main"
+zehef = "zehef:custom_main"
 
 
 # This is configuration specific to the `setuptools` build backend.
 # If you are using a different build backend, you will need to change this.
-[tool.setuptools.packages.find]
-where = [".","modules","lib"]
 #[tool.setuptools]
 # If there are data files included in your packages that need to be
 # installed, specify them here.
